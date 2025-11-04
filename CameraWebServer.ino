@@ -684,8 +684,3 @@ void handleRecalibrate() {
   server.sendHeader("Access-Control-Allow-Origin", "*");
   server.send(200, "application/json", "{\"message\":\"UV recalibrated\"}");
 }
-
-//     Serial.printf("UV 전송 실패: %s\n", http.errorToString(code).c_str());
-//   }
-//   http.end();
-// }
